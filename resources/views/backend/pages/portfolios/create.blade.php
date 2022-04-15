@@ -28,13 +28,13 @@
                         <br>
                         <label for="">Business Person</label>
                         <br>
-                        <input type="text" class="form-control" name="name" placeholder="Name of business person">
-                        <!-- <select name="business_id" id="business_id" class="form-control">
+                        <!-- <input type="text" class="form-control" name="name" placeholder="Name of business person"> -->
+                        <select name="business_id" id="business_id" class="form-control">
                             <option value="">Select a Business Owner</option>
                             @foreach($business_person as $person)
                                 <option value="{{$person->id}}">{{$person->name}}</option>
                             @endforeach
-                        </select> -->
+                        </select>
                     </div>
                     <div class='col-md-6'>
                         <br>

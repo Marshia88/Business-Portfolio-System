@@ -11,32 +11,39 @@
 
         <div class="col-md-3">
           
-          <img src="{{ asset('images/portfolios/book.jpg') }}" class="img img-fluid" />
+          <img src="{{ asset('images/portfolios/girl1.jpg') }}" class="img img-fluid" />
         </div>
         <div class="col-md-9">
-          <h3>Java Programming</h3>
-          <p class="text-muted">Written By 
-            <span class="text-primary">Herbert Scheild</span> @<span class="text-info">Programming</span>
+          <h3>Marshia Nujhat</h3>
+          <p class="text-muted">Owner of 
+            <span class="text-primary">Kids Choice</span> 
+            <!-- @<span class="text-info">Programming</span> -->
           </p>
           <hr>
-          <p><strong>Uploaded By: </strong> Polash Rana</p>
-          <p><strong>Uploaded at: </strong> 2 months ago</p>
+          <p><strong>Age: </strong> 32</p>
+          <p><strong>Business Starting Year: </strong> 2017</p>
           <div class="book-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
+          <p><strong>Business Details: </strong> 
+          Kids Choice is a clothing collection brand for children ages 0-12 years with unique and desirable concepts. We try to always come up with fashionable designs for kids but also always keep focus on the quality.
+          </p>  
+         </div>
+         <div class="book-description">
+          <p><strong>Aspirations: </strong> 
+          I decided to start this brand as I felt there was a need for some uncommon clothes collections for the kids in Bangladesh. I want children to find comfort in what they wear and also have fun while playing dress-up!
+          </p>  
+         </div>
+         <p><strong>You can contact me via my social media if you want to connect with me or collaborate! </strong></p>
+         <p><strong>Email: </strong> marshia.nujhat@gmail.com</p>
+         <p><strong>Social Media: </strong> https://kids_choice.com</p>
+         <p><strong>Linkedin: </strong> linkedin//marshia1918</p>
 
-          <div class="book-buttons mt-4">
+          <!-- <div class="book-buttons mt-4">
               <a href="" class="btn btn-outline-success"><i class="fa fa-check"></i> Already Read</a>
-              <a href="{{ route('portfolios.show') }}" class="btn btn-outline-warning"><i class="fa fa-cart-plus"></i> Add to Cart</a>
+              <a href="{{ route('portfolios.show') }}" class="btn btn-outline-warning"><i class="fa fa-cart-plus"></i> Add to Cart</a> -->
               <!-- <a href="book-view.html" class="btn btn-outline-warning"><i class="fa fa-cart-plus"></i> Add to Cart</a> -->
-              <a href="" class="btn btn-outline-danger"><i class="fa fa-heart"></i> Add to Wishlist</a>
+              <!-- <a href="" class="btn btn-outline-danger"><i class="fa fa-heart"></i> Add to Wishlist</a>
           </div>
-        </div>
+        </div> -->
 
       </div>
     </div>

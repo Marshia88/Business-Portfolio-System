@@ -20,7 +20,7 @@
                         <thead>
                             <tr>
                                 <th>S1</th>
-                                <th>Business Person</th>
+                                <!-- <th>Business Person</th> -->
                                 <th>Business Name</th>
                                 <th>URL</th>
                                 <th>Category</th>
@@ -31,7 +31,7 @@
                             @foreach($portfolios as $portfolio)
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
-                                <td>{{ $portfolio->name }}</td>
+                                <!-- <td>{{ $portfolio->name }}</td> -->
                                 <td>{{ $portfolio->business_name }}</td>
    
                                 <td><a href="{{ route('portfolios.show', $portfolio->slug) }}" target="_blank">{{ route('portfolios.show', $portfolio->slug) }}</a></td>

@@ -10,9 +10,9 @@
           <a class="dropdown-item" href="#">Logout</a>
         </div>
       </div>
-      <div class="float-right">
+      <!-- <div class="float-right">
         <a href="" class="top-header-link"><span class="item">10</span> items in wishlist</a>
-      </div>
+      </div> -->
       <div class="clearfix"></div>
     </div>
   </div>

@@ -113,30 +113,34 @@
         <div class="row">
           <div class="col-md-4">
             <div class="form-group">
-                <label for="exampleInputEmail1">Book Title/Description</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Book Title/Description">
+                <label for="exampleInputEmail1">Business Person</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name of business owner">
               </div>
           </div>
           <div class="col-md-2">
             <div class="form-group">
-                <label for="exampleInputEmail1">Author</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Book Author">
+                <label for="exampleInputEmail1">Business Name</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name of business">
               </div>
           </div>
-          <div class="col-md-2">
+          <!-- <div class="col-md-2">
             <div class="form-group">
                 <label for="exampleInputEmail1">Publication</label>
                 <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Book Publication">
               </div>
-          </div>
+          </div> -->
           <div class="col-md-3">
             <div class="form-group">
                 <label for="exampleInputEmail1">Business Category</label>
                 <select class="form-control"> 
                   <option>Select a category</option>
-                  <option>Java Programming</option>
-                  <option>C Programming</option>
-                  <option>C++ Programming</option>
+                  <option>Food</option>
+                  <option>Clothes</option>
+                  <option>Furniture</option>
+                  <option>Footwear</option>
+                  <option>Cleaning</option>
+                  <option>Makeup</option>
+                  <option></option>
                 </select>
               </div>
           </div>
@@ -155,34 +159,34 @@
       <div class="row">
 
         <div class="col-md-9">
-          <h3>Recent Uploaded Books</h3>
+          <h3>Listed Portfolios</h3>
 
           <div class="row">
 
             <div class="col-md-4">
               <div class="single-book">
-                <img src="{{ asset ('images/portfolios/book.jpg') }}" alt="">
+                <img src="{{ asset ('images/portfolios/girl1.jpg') }}" alt="">
                 <div class="book-short-info">
-                  <h5>Java Programming</h5>
+                  <h5>Marshia Nujhat</h5>
                   <p>
-                    <a href="" class=""><i class="fa fa-upload"></i> Polash Rana</a>
+                    <a href="" class=""><i class="fa fa-list"></i> Owner of Kids Choice</a>
                   </p>
                   <a href="{{ route('portfolios.show') }}" class="btn btn-outline-primary"><i class="fa fa-eye"></i> View</a>
-                  <a href="" class="btn btn-outline-danger"><i class="fa fa-heart"></i> Wishlist</a>
+                  <!-- <a href="" class="btn btn-outline-danger"><i class="fa fa-heart"></i> Wishlist</a> -->
                   
                 </div>
               </div>
             </div> <!-- Single Book Item -->
             <div class="col-md-4">
               <div class="single-book">
-                <img src="{{ asset ('images/portfolios/book2.jpg') }}" alt="">
+                <img src="{{ asset ('images/portfolios/Boy1.png') }}" alt="">
                 <div class="book-short-info">
-                  <h5>C Programming</h5>
+                  <h5>Abid Hasan</h5>
                   <p>
-                    <a href="" class=""><i class="fa fa-upload"></i> Polash Rana</a>
+                    <a href="" class=""><i class="fa fa-list"></i> Owner of Alpha Catering</a>
                   </p>
                   <a href="{{ route('portfolios.show') }}" class="btn btn-outline-primary"><i class="fa fa-eye"></i> View</a>
-                  <a href="" class="btn btn-outline-danger"><i class="fa fa-heart"></i> Wishlist</a>
+                  <!-- <a href="" class="btn btn-outline-danger"><i class="fa fa-heart"></i> Wishlist</a> -->
                   
                 </div>
               </div>
@@ -190,33 +194,33 @@
 
             <div class="col-md-4">
               <div class="single-book">
-                <img src="{{ asset ('images/portfolios/book1.jpg') }}" alt="">
+                <img src="{{ asset ('images/portfolios/girl2.jpg') }}" alt="">
                 <div class="book-short-info">
-                  <h5>C++ Programming</h5>
+                  <h5>Maisha Larisa</h5>
                   <p>
-                    <a href="" class=""><i class="fa fa-upload"></i> Polash Rana</a>
+                    <a href="" class=""><i class="fa fa-list"></i> Ownwr of Cleaning Go</a>
                   </p>
                   <a href="{{ route('portfolios.show') }}" class="btn btn-outline-primary"><i class="fa fa-eye"></i> View</a>
-                  <a href="" class="btn btn-outline-danger"><i class="fa fa-heart"></i> Wishlist</a>
+                  <!-- <a href="" class="btn btn-outline-danger"><i class="fa fa-heart"></i> Wishlist</a> -->
                   
                 </div>
               </div>
             </div> <!-- Single Book Item -->
             <div class="col-md-4">
               <div class="single-book">
-                <img src="{{ asset ('images/portfolios/book3.jpg') }}" alt="">
+                <img src="{{ asset ('images/portfolios/Extra.jpg') }}" alt="">
                 <div class="book-short-info">
-                  <h5>Java Programming</h5>
+                  <h5>Eva Khan</h5>
                   <p>
-                    <a href="" class=""><i class="fa fa-upload"></i> Polash Rana</a>
+                    <a href="" class=""><i class="fa fa-list"></i> Owner of Makeup Haul</a>
                   </p>
                   <a href="{{ route('portfolios.show') }}" class="btn btn-outline-primary"><i class="fa fa-eye"></i> View</a>
-                  <a href="" class="btn btn-outline-danger"><i class="fa fa-heart"></i> Wishlist</a>
+                  <!-- <a href="" class="btn btn-outline-danger"><i class="fa fa-heart"></i> Wishlist</a> -->
                   
                 </div>
               </div>
             </div> <!-- Single Book Item -->
-            <div class="col-md-4">
+            <!-- <div class="col-md-4">
               <div class="single-book">
                 <img src="{{ asset ('images/portfolios/book4.jpg') }}" alt="">
                 <div class="book-short-info">
@@ -229,7 +233,7 @@
                   
                 </div>
               </div>
-            </div> <!-- Single Book Item -->
+            </div>  -->
 
 
           </div>
@@ -265,11 +269,13 @@
 
             <div class="list-group mt-3">
               <a href="#" class="list-group-item list-group-item-action">
-                Programming
+                Food
               </a>
-              <a href="#" class="list-group-item list-group-item-action">Arts</a>
-              <a href="#" class="list-group-item list-group-item-action">Banking</a>
-              <a href="#" class="list-group-item list-group-item-action">Others</a>
+              <a href="#" class="list-group-item list-group-item-action">Clothes</a>
+              <a href="#" class="list-group-item list-group-item-action">Furniture</a>
+              <a href="#" class="list-group-item list-group-item-action">Footwear</a>
+              <a href="#" class="list-group-item list-group-item-action">Cleaning</a>
+              <a href="#" class="list-group-item list-group-item-action">Makeup</a>
             </div>
 
           </div> <!-- Single Widget -->
