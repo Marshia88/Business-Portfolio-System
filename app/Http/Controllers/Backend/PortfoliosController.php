@@ -45,14 +45,14 @@ class PortfoliosController extends Controller
     public function store(Request $request)
     {
 
-        $request->validate([
-            'business_name' => 'required|max:100',
-            'category_id' => 'required',
-            // 'business_id' => 'required',
-            'slug' => 'nullable',
-            'description' => 'nullable|min:5',
-            'image'=>'nullablee',
-        ]);
+        // $request->validate([
+        //     'business_name' => 'required|max:100',
+        //     'category_id' => 'required',
+        //     // 'business_id' => 'required',
+        //     'slug' => 'nullable',
+        //     'description' => 'nullable|min:5',
+        //     'image'=>'nullablee',
+        // ]);
 
         $portfolio = new Profile();
         $portfolio->name=$request->name;
@@ -90,7 +90,7 @@ class PortfoliosController extends Controller
             // dd($file);
         }
 
-        session()->flash('success','Portfolio has been updated.');
+        session()->flash('success','Portfolio has been created.');
         return redirect()->route('admin.portfolios.index');
 
     }
