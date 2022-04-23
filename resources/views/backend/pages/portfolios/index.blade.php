@@ -35,10 +35,6 @@
                                 <td>{{ $portfolio->business_name }}</td>
    
                                 <td><a href="{{ route('portfolios.show', $portfolio->slug) }}" target="_blank">{{ route('portfolios.show', $portfolio->slug) }}</a></td>
-                                <!-- <td>
-                                    {{ $portfolio-> category->name }}
-                                </td> -->
-                                <!-- <td>{{ $portfolio->description }}</td> -->
                                 <td>
                                     <a href="{{ route('admin.portfolios.edit', $portfolio->id) }}" class="btn btn-success"><i class="fa fa-edit" ></i> Edit</a>
                                     <a href="#deleteModal{{ $portfolio->id }}" class="btn btn-danger" data-toggle="modal"><i class="fa fa-trash" ></i> Delete</a>

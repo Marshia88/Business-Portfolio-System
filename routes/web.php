@@ -21,8 +21,11 @@ Route::get('/', function(){
 
 Route:: get('/',[PagesController::class,'index'])-> name('index');
 
-Route:: get('/portfolios','PortfoliosController@index')-> name('portfolios.index');
-Route:: get('/portfolios/single',[PortfoliosController::class,'show'])-> name('portfolios.show');
+
+Route:: get('/portfolios','App\Http\Controllers\PortfoliosController@index')-> name('portfolios.index');
+Route:: get('/portfolios/show',[PortfoliosController::class,'show'])-> name('portfolios.show');
+Route:: get('/portfolios/upload/new',[PortfoliosController::class,'create'])-> name('portfolios.upload');
+Route:: post('/portfolios/upload/post','App\Http\Controllers\PortfoliosController@store')-> name('portfolios.store');
 
 Route:: get('/portfolios/categories/{slug}','CategoriesController@show')-> name('categories.show');
 
@@ -69,3 +72,19 @@ Route::group(['prefix' => 'admin'], function(){
         Route::post('/delete/{id}', 'App\Http\Controllers\Backend\ProfileCreatorController@destroy')->name('admin.profilecreator.delete');
     });
 });
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});
+
+Auth::routes();
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

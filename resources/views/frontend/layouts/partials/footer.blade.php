@@ -26,7 +26,7 @@
         </ul>
       </div>
 
-
+<!-- 
       <div class="col-md-3">
         <h4>Top Links</h4>
         <ul>
@@ -35,16 +35,16 @@
           <li><a href="">Create New Account</a></li>
           <li><a href="">Privacy Policy</a></li>
         </ul>
-      </div>
+      </div> -->
 
 
       <div class="col-md-3">
-        <h4>Top Links</h4>
+        <h4>Contact Us</h4>
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Login</a></li>
-          <li><a href="">Create New Account</a></li>
-          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Email</a></li>
+          <li><a href="">Phone</a></li>
+          <li><a href="">Location</a></li>
+          <li><a href="">Whatsapp</a></li>
         </ul>
       </div>
 

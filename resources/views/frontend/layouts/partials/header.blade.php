@@ -1,5 +1,7 @@
 <div class="top-header">
     <div class="container">
+      @if (Auth::check())
+
       <div class="dropdown float-right">
         <a class="dropdown-toggle pointer top-header-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fa fa-user"></i> My Account
@@ -7,9 +9,17 @@
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
           <a class="dropdown-item" href="profile.html">Profile</a>
           <a class="dropdown-item" href="dashboard.html">Dashboard</a>
-          <a class="dropdown-item" href="#">Logout</a>
+          <a class="dropdown-item" href="{{ route('logout') }}"
+              onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> Logout
+          </a>
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+              @csrf
+          </form>
         </div>
       </div>
+      @else
+
+      @endif
       <!-- <div class="float-right">
         <a href="" class="top-header-link"><span class="item">10</span> items in wishlist</a>
       </div> -->

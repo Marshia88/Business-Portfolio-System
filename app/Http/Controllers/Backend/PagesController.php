@@ -11,6 +11,10 @@ use App\Models\ProfileCreator;
 
 class PagesController extends Controller
 {
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
     public function index()
     {
         $total_profiles=count(Profile::all());

@@ -63,7 +63,7 @@
       <div class="row">
 
         <div class="col-md-3">
-          <div class="card card-body single-top-link" onclick="location.href='login.html'">
+          <div class="card card-body single-top-link" onclick="location.href='{{ route('login')}}'">
             <h4>Sign In</h4>
             <i class="fa fa-sign-in-alt"></i>
             <p>
@@ -72,9 +72,9 @@
           </div> <!-- Single Item -->
         </div> <!-- Single Col -->
 
-        <div class="col-md-3">
-          <div class="card card-body single-top-link"  onclick="location.href='register.html'">
-            <h4>Create New</h4>
+        <div class="col-md-4">
+          <div class="card card-body single-top-link"  onclick="location.href='{{ route('register')}}'">
+            <h4>Create New Account</h4>
             <i class="fa fa-user"></i>
             <p>
               Create New Account
@@ -190,7 +190,7 @@
                   
                 </div>
               </div>
-            </div> <!-- Single Book Item -->
+            </div> 
 
             <div class="col-md-4">
               <div class="single-book">
@@ -205,7 +205,7 @@
                   
                 </div>
               </div>
-            </div> <!-- Single Book Item -->
+            </div> 
             <div class="col-md-4">
               <div class="single-book">
                 <img src="{{ asset ('images/portfolios/Extra.jpg') }}" alt="">
@@ -219,7 +219,7 @@
                   
                 </div>
               </div>
-            </div> <!-- Single Book Item -->
+            </div> 
             <!-- <div class="col-md-4">
               <div class="single-book">
                 <img src="{{ asset ('images/portfolios/book4.jpg') }}" alt="">

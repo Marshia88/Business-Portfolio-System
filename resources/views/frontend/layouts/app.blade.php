@@ -9,6 +9,7 @@
   <title>Connect Business</title>
 
   @include('frontend.layouts.partials.style')
+  @yield('styles')
 
 </head>
 <body>
@@ -17,6 +18,7 @@
   @yield('content')
   @include('frontend.layouts.partials.footer')
   @include('frontend.layouts.partials.script')
+  @yield('scripts')
 
 </body>
 </html>
